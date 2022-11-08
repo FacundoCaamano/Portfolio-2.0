@@ -30,14 +30,14 @@ export const InicioContainer=()=>{
             </div>
             <div>
                 <h2>Skills</h2>
-                <img src='https://cdn-icons-png.flaticon.com/512/732/732212.png' />
-                <img src='https://cdn-icons-png.flaticon.com/512/732/732190.png' />
-                <img src='https://cdn-icons-png.flaticon.com/512/5968/5968358.png'/>
-                <img src='https://cdn-icons-png.flaticon.com/512/5968/5968672.png' />
-                <img src='https://cdn-icons-png.flaticon.com/512/5968/5968292.png'  />
-                <img src='https://cdn-icons-png.flaticon.com/512/1126/1126012.png' />
-                <img src='https://assets.stickpng.com/images/5847f981cef1014c0b5e48be.png' />
-                <img src='https://cdn-icons-png.flaticon.com/512/2504/2504911.png'/>
+                <img src='https://cdn-icons-png.flaticon.com/512/732/732212.png'  alt='1' />
+                <img src='https://cdn-icons-png.flaticon.com/512/732/732190.png'  alt='1' />
+                <img src='https://cdn-icons-png.flaticon.com/512/5968/5968358.png' alt='1' />
+                <img src='https://cdn-icons-png.flaticon.com/512/5968/5968672.png'  alt='1' />
+                <img src='https://cdn-icons-png.flaticon.com/512/5968/5968292.png'   alt='1' />
+                <img src='https://cdn-icons-png.flaticon.com/512/1126/1126012.png'  alt='1' />
+                <img src='https://assets.stickpng.com/images/5847f981cef1014c0b5e48be.png'  alt='1' />
+                <img src='https://cdn-icons-png.flaticon.com/512/2504/2504911.png' alt='1' />
             </div>
         </div>
     )

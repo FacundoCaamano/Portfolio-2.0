@@ -1,0 +1,31 @@
+
+
+.contenedor__proyectos{
+    border: 1px solid red;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    width: max-content;
+    
+    &--info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border: 1px solid black;
+        width: 500px;
+    }
+    &--img{
+        border: 1px solid blue;
+        padding: 10px;
+        width: 300px;
+       
+    }
+    &--titulo{
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid green;
+    }
+    &--repositorios{
+        border: 1px solid yellow;
+    }
+}
