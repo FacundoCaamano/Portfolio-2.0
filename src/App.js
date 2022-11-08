@@ -3,7 +3,7 @@ import {NavBar} from './components/NavBar/NavBar';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import { InicioContainer } from './components/InicioContainer/InicioContainer';
 import { Footer } from './components/Footer/Footer';
-import { Proyectos } from './components/ProyectosContainer/ProyectosContainer';
+import { ProyectosListContainer } from './components/ProyectosListContainer/ProyectosListContainer';
 import { Contacto } from './components/Contacto/Contacto';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
           <NavBar/>
           <Routes>
             <Route path='/' element={<InicioContainer/>} /> 
-            <Route path="/proyectos" element={<Proyectos/>}/>
+            <Route path="/proyectos" element={<ProyectosListContainer/>}/>
             <Route path="/Contacto" element={<Contacto/>}/>
           </Routes>
           <Footer/>
