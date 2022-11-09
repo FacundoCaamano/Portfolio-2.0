@@ -10,7 +10,7 @@ export const ProyectosListContainer =()=>{
         const getData =new Promise(resolve => {
             setTimeout(()=>{
                 resolve(proyectos)
-            },1000)
+            },)
         })
 
         getData.then(res=>setData (res))
@@ -19,7 +19,7 @@ export const ProyectosListContainer =()=>{
 
     return(
         <div> 
-            <h1>contenedor lista de proyectos</h1>
+            <h1>Mis proyectos</h1>
            <ProyectosList data={data}/>
         </div>
     )

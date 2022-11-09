@@ -1,0 +1,15 @@
+.contenedor--footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &__imagenes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &-img{
+            width: 150px;
+            margin: 10px;
+        }
+    }
+
+}

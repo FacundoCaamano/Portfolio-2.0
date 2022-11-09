@@ -3,9 +3,9 @@ export const Proyecto = ({info})=>{
     return(
         <div className="proyectos">
             <div className="contenedor__proyectos">
-                <div>
+                <a href={info.link} >
                     <img src={info.pictureUrl} alt="proyecto" className="contenedor__proyectos--img"/>
-                </div>
+                </a>
                 <div className="contenedor__proyectos--info">
                     <p className="contenedor__proyectos--titulo">{info.nombre}</p>
                     <p>{info.herramientas}</p>

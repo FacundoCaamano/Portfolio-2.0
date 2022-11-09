@@ -16,3 +16,7 @@
     border: black;
 }
 
+.navbar-collapse{
+    justify-content: center;
+}
+

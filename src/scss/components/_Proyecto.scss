@@ -1,31 +1,40 @@
 
 
 .contenedor__proyectos{
-    border: 1px solid red;
-    margin: 10px;
-    padding: 10px;
+    border: 5px solid yellowgreen;
+    border-radius: 6px;
     display: flex;
-    width: max-content;
-    
+    margin-top: 70px;
     &--info{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        border: 1px solid black;
+        padding: 10px;
         width: 500px;
+        background-color: white;
     }
     &--img{
-        border: 1px solid blue;
-        padding: 10px;
-        width: 300px;
-       
+        height: 250px; 
     }
     &--titulo{
         margin: 10px;
         padding: 10px;
-        border: 1px solid green;
     }
     &--repositorios{
-        border: 1px solid yellow;
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contenedor__proyectos{
+        flex-direction: column;
+        width: 300px;
+        margin: 40px 0;       
+    }
+    .contenedor__proyectos--info{
+        width: 290px;
+    }
+    .contenedor__proyectos--img{
+        height: 183px;
     }
 }
