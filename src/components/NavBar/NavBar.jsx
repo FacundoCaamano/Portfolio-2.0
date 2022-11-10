@@ -1,4 +1,3 @@
-import './NavBar.css'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavLink } from 'react-router-dom';
@@ -7,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 export const NavBar= () => {
     return (
-                  <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                  <Navbar collapseOnSelect expand="lg"  variant="dark">
                   <Navbar.Brand>
                     -Fc-
                   </Navbar.Brand>
@@ -19,9 +18,7 @@ export const NavBar= () => {
                       <NavLink to='/Contacto' className="nav--links">Contacto</NavLink>
                     </Nav>
                   </Navbar.Collapse>
-                </Navbar>
-
-      
+                </Navbar>      
     );
   }
 

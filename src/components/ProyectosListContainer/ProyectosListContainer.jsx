@@ -18,8 +18,8 @@ export const ProyectosListContainer =()=>{
     },[])
 
     return(
-        <div> 
-            <h1>Mis proyectos</h1>
+        <div className="contenedor__proyectosLista"> 
+            <h1 className="contenedor__proyectosLista--titulo">Mis proyectos</h1>
            <ProyectosList data={data}/>
         </div>
     )

@@ -1,0 +1,114 @@
+.contenedor__inicio--titulo{
+    margin: 150px;
+}
+.contenedor__inicio--sobreMi{
+    margin: 150px;
+}
+
+.certificados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--img{
+        width: 50%;
+        margin: 50px;
+    }
+}
+
+.contenedor__perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    margin: 15px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    &--iconos{
+        &-E{
+            margin: 20px;
+            width: 150px;
+        }
+    }
+}
+
+
+
+.skills{
+    margin: 100px;
+    &__img{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 500px;
+        &--1{
+            display: flex;
+            img{
+                height: 200px;
+                transform: rotate3d(1, 1, 1, 15deg);
+                margin: 0 0 -2rem -3rem;
+            }
+        }
+        &--2{
+            display: flex;
+            img{
+                height: 200px;
+                margin: 0 0 -2rem -3rem;
+                transform: rotate3d(1, 1, 1, 15deg);
+            }
+        }
+      
+    }
+}
+.skills img{
+    transition: .5s linear;
+}
+
+.skills img:hover{
+    transform: none;
+    margin: 10px 50px;
+    z-index: 1;
+    
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .contenedor__inicio--titulo{
+        margin: 50px;
+    }
+    .contenedor__inicio--sobreMi{
+        margin: 50px;
+    }
+.skills{
+    &__img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+        &--1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: none;
+        }
+        &--2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img{
+            margin: 30px;
+            width: 200px;
+            transform: none;
+        }
+    }
+}
+}

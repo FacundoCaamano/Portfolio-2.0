@@ -1,0 +1,16 @@
+@mixin fontSize($size , $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+h1{
+    @include fontSize(3rem , 1000 )
+}
+
+h2{
+    @include fontSize(2rem, 800 )
+}
+
+p{
+    @include fontSize(1.3rem, 600 )
+}
