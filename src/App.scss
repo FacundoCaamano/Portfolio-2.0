@@ -3,6 +3,10 @@ body{
   color: yellowgreen;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow-x: hidden;
+}
+html{
+  overflow-x: hidden;
 }
 
 .App {

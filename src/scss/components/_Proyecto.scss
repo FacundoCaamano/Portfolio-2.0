@@ -3,6 +3,7 @@
 .contenedor__proyectos{
     border: 5px solid yellowgreen;
     border-radius: 6px;
+    height: 261px;
     display: flex;
     margin-top: 70px;
     &--info{
@@ -29,6 +30,7 @@
     .contenedor__proyectos{
         flex-direction: column;
         width: 300px;
+        height: auto;
         margin: 40px 0;       
     }
     .contenedor__proyectos--info{

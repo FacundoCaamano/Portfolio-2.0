@@ -7,23 +7,23 @@ export const InicioContainer=()=>{
     return(
         <div className='contenedor__inicio'>
             <h1 className='contenedor__inicio--titulo'>Mi portafolio</h1>
-            <p className='contenedor__inicio--sobreMi'>
+            <p className='contenedor__inicio--sobreMi '>
                 hola mi nombre es Facundo Caamaño y soy desarrollador Frontend ectualmente estoy estudiando en coder house  cursando la carrera de full stack, me apasiona mucho el mundo de la programacion y la idea de aprender nuevas tecnologias para crear paginas web 
             </p>
-
-            <div className='certificados'>
-                <h2>certificados</h2>
-                    <img src={desarrolloweb}  className="certificados--img" alt='cert'/>
-                    <img src={javascript} className="certificados--img" alt='cert'/>
-                    <img src={Reactjs} className="certificados--img" alt="cert" />
-            </div>
-            <div className='contenedor__perfil'>
+            <div className='contenedor__perfil animate__animated animate__backInRight'>
                <div className='contenedor__perfil--iconos'>
                     <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="linkedin" className='contenedor__perfil--iconos-E'/> linkedin
                </div>
                <div className='contenedor__perfil--iconos'>
                     <img src='https://cdn-icons-png.flaticon.com/512/3135/3135731.png' alt='cv' className='contenedor__perfil--iconos-E'/> cv
                </div>    
+            </div>
+
+            <div className='certificados'>
+                <h2>certificados</h2>
+                    <img src={desarrolloweb}  className="certificados--img" alt='cert'/>
+                    <img src={javascript} className="certificados--img" alt='cert'/>
+                    <img src={Reactjs} className="certificados--img" alt="cert" />
             </div>
             <div className='skills'>
                 <h2 className='skiils__titulo'>Skills</h2>
