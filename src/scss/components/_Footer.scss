@@ -1,13 +1,19 @@
 .contenedor--footer{
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    margin: 20px;
+    &__txt{
+           width: 45%; 
+           color: $base-color;
+    }
     &__imagenes{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
+        width: 45%;
+        
         &-img{
-            width: 150px;
+            width: 100px;
             margin: 10px;
         }
     }

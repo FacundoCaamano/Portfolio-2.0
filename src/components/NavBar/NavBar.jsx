@@ -13,9 +13,9 @@ export const NavBar= () => {
                   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                   <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                      <NavLink to='/'className="nav--links animate__animated animate__backInLeft">Inicio</NavLink>
-                      <NavLink to='/Proyectos' className="nav--links animate__animated animate__backInRight">Proyectos</NavLink>
-                      <NavLink to='/Contacto' className="nav--links animate__animated animate__backInLeft">Contacto</NavLink>
+                      <NavLink to='/'className={({isActive})=>isActive === true ? 'claseActiva nav--links animate__animated animate__backInLeft' : 'claseInactiva nav--links animate__animated animate__backInLeft'}>Inicio</NavLink>
+                      <NavLink to='/Proyectos' className={({isActive})=>isActive === true ? 'claseActiva nav--links animate__animated animate__backInRight' : 'claseInactiva nav--links animate__animated animate__backInRight'}>Proyectos</NavLink>
+                      <NavLink to='/Contacto' className={({isActive})=>isActive === true ? 'claseActiva nav--links animate__animated animate__backInLeft' : 'claseInactiva nav--links animate__animated animate__backInLeft'}>Contacto</NavLink>
                     </Nav>
                   </Navbar.Collapse>
                 </Navbar>      

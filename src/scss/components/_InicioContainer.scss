@@ -1,16 +1,19 @@
 .contenedor__inicio--titulo{
     margin: 150px;
+    color: $base-color;
 }
 .contenedor__inicio--sobreMi{
     margin: 150px;
+    color: $base-color;
 }
 
 .certificados{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: $base-color;
     &--img{
-        width: 50%;
+        width: 70%;
         margin: 50px;
     }
 }
@@ -27,7 +30,23 @@
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    &--iconos{
+    &--iconos{ 
+        a{
+            color: $base-color;
+            font-size: 1.5rem;
+            margin-left: 50px;
+            display: inline;
+        }
+        spam{
+            color: $base-color;
+            font-size: 1.5rem;
+            margin-left: 50px;
+        }
+        NavLink{
+            color: $base-color;
+            font-size: 1.5rem;
+            margin-left: 50px;
+        }
         &-E{
             margin: 20px;
             width: 150px;
@@ -44,6 +63,7 @@
         align-items: center;
         flex-direction: column;
         height: 500px;
+       
         &--1{
             display: flex;
             img{
@@ -69,12 +89,38 @@
 
 .skills img:hover{
     transform: none;
-    margin: 10px 50px;
+    margin: 10px 50px 10px 10px;
     z-index: 1;
     
 }
 
+tool-tip{
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    user-select: none;
+    background-color: $base-color;
+    
 
+    box-shadow: 0 0 10px black;
+    padding: 10px;
+    font-size: .8rem;
+    border-radius: 8px;
+    top: 80%;
+    left: 30.5%;
+
+    opacity: 0;
+    transition: opacity .3s ease;
+
+}
+
+:has(> tool-tip){
+    position: relative;
+}
+
+:has(> tool-tip):hover tool-tip{
+    opacity: 1;
+}
 
 
 

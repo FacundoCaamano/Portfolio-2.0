@@ -1,8 +1,11 @@
 .nav--links{
-    color: rgb(255, 255, 255);
     padding: 5px;
     margin: 10px 50px;
     text-decoration: none;
+}
+
+.nav--links:hover{
+    color: rgb(85, 235, 85);
 }
 
 .navbar-toggler-icon{
@@ -15,4 +18,13 @@
 
 .navbar-collapse{
     justify-content: center;
+}
+
+.claseActiva{
+    color: rgb(85, 235, 85);
+    font-size: 1.2rem;
+}
+
+.claseInactiva{
+   color: $base-color;
 }

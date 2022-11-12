@@ -2,7 +2,7 @@
 export const Proyecto = ({info})=>{
     return(
         <div className="proyectos">
-            <div className="contenedor__proyectos">
+            <div className="contenedor__proyectos" data-aos="zoom-in">
                 <a href={info.link} >
                     <img src={info.pictureUrl} alt="proyecto" className="contenedor__proyectos--img"/>
                 </a>
