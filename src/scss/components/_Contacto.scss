@@ -1,0 +1,60 @@
+.titulo__contacto{
+    color: $base-color;
+}
+
+.contacto{
+    color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    
+    &__lista{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border:1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        &--item{
+            width: 40%;
+            margin: 20px 10px;
+            input{
+                width: 100%;
+                background-color: rgb(30, 50, 81);
+                border: none;
+                border-radius: 10px;
+                padding: 10px;
+                height: 60px;
+                color: $base-color;
+            }
+            label{
+                font-size: 1.3rem;
+                color: $base-color;
+            }
+            textarea{
+                width: 100%;
+                background-color: rgb(30, 50, 81);
+                color: $base-color;
+                border: none;
+                border-radius: 10px;
+                height: 60px;
+                padding: 10px;
+            }
+            &-btn{
+                color: $base-color;
+                margin: 10px;
+            }
+        }
+    }
+}

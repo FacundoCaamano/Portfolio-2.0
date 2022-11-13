@@ -1,10 +1,13 @@
+@import './scss/base/base';
+@import './scss/base/resets';
+
+
+
 @import './scss/abstracts/mixins';
 @import './scss/abstracts/variables';
 
 
 
-@import './scss/base/base';
-@import './scss/base/resets';
 
 
 /*components*/
@@ -14,6 +17,7 @@
 @import './scss/components/Proyecto';
 @import './scss/components/ProyectosList';
 @import './scss/components/ProyectosListContainer';
+@import './scss/components/Contacto';
 @import './scss/components/Footer'
 
 
