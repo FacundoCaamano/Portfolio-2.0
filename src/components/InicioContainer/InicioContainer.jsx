@@ -11,6 +11,30 @@ export const InicioContainer = () => {
             <p className='contenedor__inicio--sobreMi '>
                 hola mi nombre es Facundo Caamaño y soy desarrollador Frontend ectualmente estoy estudiando en coder house  cursando la carrera de full stack, me apasiona mucho el mundo de la programacion y la idea de aprender nuevas tecnologias para crear paginas web
             </p>
+            <div className='contenedor__perfil ' data-aos="fade-left" data-aos-duration="2000">
+                <div className='contenedor__perfil--iconos animate__animated animate__pulse animate__infinite infinite animate__slower	2s'>
+                    <Link to='./Proyectos'>
+                        <img src='https://cdn-icons-png.flaticon.com/512/3518/3518229.png' alt='proyectos' className='contenedor__perfil--iconos-E'/>
+                        Mis proyectos
+                    </Link>
+                </div>
+                <div className='contenedor__perfil--iconos animate__animated animate__pulse animate__infinite infinite animate__slower	2s'>
+                    <a  href="https://www.linkedin.com/in/facundo-caama%C3%B1o-6a581324b/" target="blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1409/1409945.png" alt="linkedin" className='contenedor__perfil--iconos-E' />
+                        Link a mi perfil de linkedin
+                    </a>
+                </div>
+                <div className='contenedor__perfil--iconos animate__animated animate__pulse animate__infinite infinite animate__slower	2s'>
+                    <a  href="https://github.com/FacundoCaamano?tab=repositories" target="blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/527/527589.png" alt="linkedin" className='contenedor__perfil--iconos-E' />
+                        Link a mi repositorio en Github
+                    </a>
+                </div>
+                <div className='contenedor__perfil--iconos animate__animated animate__pulse animate__infinite infinite animate__slower	2s'>
+                    <img src='https://cdn-icons-png.flaticon.com/512/909/909212.png' alt='cv' className='contenedor__perfil--iconos-E' />
+                    <spam>descargar cv</spam>
+                </div>
+            </div>
             <div className='certificados'>
                 <h2>certificados</h2>
                 <img src={desarrolloweb} className="certificados--img" alt='cert' data-aos="flip-left" data-aos-duration="2000" />
@@ -18,7 +42,7 @@ export const InicioContainer = () => {
                 <img src={Reactjs} className="certificados--img" alt="cert" data-aos="flip-left" data-aos-duration="2000" />
             </div>
             <div className='skills'>
-                <h2 className='skiils__titulo'>Skills</h2>
+                <h2 className='skills__titulo'>Skills</h2>
                 <div className='skills__img'>
                     <div className='skills__img--1'>
                         <picture>
@@ -59,24 +83,7 @@ export const InicioContainer = () => {
 
                 </div>
             </div>
-            <div className='contenedor__perfil ' data-aos="fade-left" data-aos-duration="2000">
-                <div className='contenedor__perfil--iconos animate__animated animate__pulse animate__infinite infinite animate__slower	2s'>
-                    <Link to='./Proyectos'>
-                        <img src='https://cdn-icons-png.flaticon.com/512/3518/3518229.png' alt='proyectos' className='contenedor__perfil--iconos-E'/>
-                        Mis proyectos
-                    </Link>
-                </div>
-                <div className='contenedor__perfil--iconos animate__animated animate__pulse animate__infinite infinite animate__slower	2s'>
-                    <a  href="https://www.linkedin.com/in/facundo-caama%C3%B1o-6a581324b/" target="blank">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1409/1409945.png" alt="linkedin" className='contenedor__perfil--iconos-E' />
-                        Link a mi perfil de linkedin
-                    </a>
-                </div>
-                <div className='contenedor__perfil--iconos animate__animated animate__pulse animate__infinite infinite animate__slower	2s'>
-                    <img src='https://cdn-icons-png.flaticon.com/512/909/909212.png' alt='cv' className='contenedor__perfil--iconos-E' />
-                    <spam>descargar cv</spam>
-                </div>
-            </div>
+            
         </div>
     )
 }

@@ -1,16 +1,9 @@
 .contenedor--footer{
-    display: flex;
-    flex-wrap: wrap;
     margin: 20px;
-    &__txt{
-           width: 45%; 
-           color: $base-color;
-    }
     &__imagenes{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 45%;
         
         &-img{
             width: 100px;
