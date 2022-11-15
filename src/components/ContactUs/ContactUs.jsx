@@ -6,7 +6,7 @@ export const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_ityxf5k', 'template_8hmvq1p', e.target, 'FxsY6Mi7n6sti1PHk')
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID,process.env.REACT_APP_TEMPLATE_ID , e.target, process.env.REACT_APP_PUBLIC_KEY)
       .then((result) => {
         alert('mensaje enviado', result.text);
       }, (error) => {
