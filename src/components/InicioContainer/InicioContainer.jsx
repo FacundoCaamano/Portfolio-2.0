@@ -31,8 +31,10 @@ export const InicioContainer = () => {
                     </a>
                 </div>
                 <div className='contenedor__perfil--iconos animate__animated animate__pulse animate__infinite infinite animate__slower	2s'>
-                    <img src='https://cdn-icons-png.flaticon.com/512/909/909212.png' alt='cv' className='contenedor__perfil--iconos-E' />
-                    <spam>descargar cv</spam>
+                    <a download='' href=''>
+                        <img src='https://cdn-icons-png.flaticon.com/512/909/909212.png' alt='cv' className='contenedor__perfil--iconos-E' />
+                        <spam>descargar cv</spam>
+                    </a>
                 </div>
             </div>
             <div className='certificados'>
@@ -80,7 +82,6 @@ export const InicioContainer = () => {
                             <tool-tip role='tooltip'> <b>GITHUB</b> </tool-tip>
                         </picture>
                     </div>
-
                 </div>
             </div>
             
