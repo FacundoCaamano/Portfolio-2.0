@@ -21,7 +21,7 @@ export const ContactUs = () => {
     <form className='formulario animate__animated animate__bounceInUp' onSubmit={sendEmail}>
       <ul className='formulario__lista'>
         <li className='formulario__lista--item'>
-          <label>Name</label>
+          <label>Nombre</label>
           <input type="text" name="user_name" required/>
         </li>
         <li className='formulario__lista--item'>

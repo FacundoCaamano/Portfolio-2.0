@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import desarrolloweb from '../../assets/img/desarrolloweb.png'
 import javascript from '../../assets/img/javascript.png'
 import Reactjs from '../../assets/img/Reactjs.png'
+import Cv from '../../assets/cv/Curriculum.pdf'
+
 
 
 export const InicioContainer = () => {
@@ -31,7 +33,7 @@ export const InicioContainer = () => {
                     </a>
                 </div>
                 <div className='contenedor__perfil--iconos animate__animated animate__pulse animate__infinite infinite animate__slower	2s'>
-                    <a download='' href=''>
+                    <a href={Cv} download='cv'>
                         <img src='https://cdn-icons-png.flaticon.com/512/909/909212.png' alt='cv' className='contenedor__perfil--iconos-E' />
                         <spam>descargar cv</spam>
                     </a>
