@@ -1,6 +1,7 @@
 import { ProyectosList } from "../ProyectosList/ProyectosLIst"
 import { useEffect, useState } from "react"
 import { proyectos } from "../baseDeDatos/baseDeDatos";
+import { Spinner } from "../Spinner/Spinner";
 
 export const ProyectosListContainer =()=>{
 
@@ -17,10 +18,33 @@ export const ProyectosListContainer =()=>{
 
     },[])
 
+    let [spinn, setSpinn]=useState(true)
+
+    
+    setTimeout(()=>{
+        setSpinn(false)
+    },1000)
+    
+    
+    if (spinn===true) return <Spinner/>
+    
+    
     return(
-        <div className="contenedor__proyectosLista"> 
-            <h1 className="contenedor__proyectosLista--titulo">Mis proyectos</h1>
-           <ProyectosList data={data}/>
-        </div>
+       
+            
+        <>
+            <div className="contenedor__proyectosLista"> 
+            <hr />
+                <h1 className="contenedor__proyectosLista--titulo">Mis proyectos</h1>
+                <div className="contenedor__proyectosLista--txt">
+                    <p >Estos son los proyectos que voy creando , puedes hacer click en la imagen que se encuentran en cada tarjeta para ir a la pagina</p>
+                </div>
+                <hr />
+            <ProyectosList data={data}/>
+            </div>
+            <hr />
+        </>
+            
+        
     )
 }

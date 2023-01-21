@@ -1,3 +1,7 @@
+hr{
+    color:white;
+    margin: 100px 70px;
+}
 
 .contenedor__inicio--titulo{
     margin: 150px;
@@ -38,11 +42,7 @@
             margin-left: 50px;
             display: inline;
         }
-        spam{
-            color: $base-color;
-            font-size: 1.5rem;
-            margin-left: 50px;
-        }
+        
         NavLink{
             color: $base-color;
             font-size: 1.5rem;
@@ -56,8 +56,11 @@
 }
 
 .certificados{
+    h2{
+        margin: 100px;
+    }
     &--img{
-        width: 90%;
+        width: 75%;
         margin: 50px 0;
     }
 }
@@ -67,7 +70,7 @@
     margin: 100px;
     &__titulo{
         color: $base-color;
-        margin: 20px;
+        margin: 50px;
     }
     &__img{
         display: flex;
@@ -165,6 +168,18 @@ tool-tip{
         }
     }
 
+    .certificados{
+        
+        &--img{
+            width: 90%;
+           
+        }
+    }
+    hr{
+        margin: 80px 20px;
+    }
+    
+
 .skills{
     &__img{
         display: flex;
@@ -188,5 +203,10 @@ tool-tip{
             transform: none;
         }
     }
+    
+}
+.skills img:hover{
+    margin: 15px 0;
+   
 }
 }

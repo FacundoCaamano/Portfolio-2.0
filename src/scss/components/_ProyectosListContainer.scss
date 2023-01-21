@@ -1,4 +1,16 @@
-.contenedor__proyectosLista--titulo{
+.contenedor__proyectosLista{
+    &--titulo{
     color: $base-color;
     margin: 50px;
+    }
+    &--txt{
+        color: $base-color;
+        display: flex;
+        justify-content: center;
+        p{
+            width: 80%;
+        }
+        
+    }
+
 }

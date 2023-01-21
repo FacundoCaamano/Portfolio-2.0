@@ -9,10 +9,12 @@ import Cv from '../../assets/cv/Curriculum.pdf'
 export const InicioContainer = () => {
     return (
         <div className='contenedor__inicio'>
-            <h1 className='contenedor__inicio--titulo'>Mi portafolio</h1>
-            <p className='contenedor__inicio--sobreMi '>
-                hola mi nombre es Facundo Caamaño y soy desarrollador Frontend ectualmente estoy estudiando en coder house  cursando la carrera de full stack, me apasiona mucho el mundo de la programacion y la idea de aprender nuevas tecnologias para crear paginas web
+            <hr />
+            <h1 className='contenedor__inicio--titulo animate__animated animate__bounceInDown'>Mi portafolio</h1>
+            <p className='contenedor__inicio--sobreMi animate__animated animate__bounceInDown'>
+                hola mi nombre es Facundo Caamaño y soy desarrollador Frontend, actualmente estoy estudiando en coder house  cursando la carrera de full stack, me apasiona mucho el mundo de la programacion y la idea de aprender nuevas tecnologias para crear paginas web
             </p>
+            <hr/>
             <div className='contenedor__perfil ' data-aos="fade-left" data-aos-duration="2000">
                 <div className='contenedor__perfil--iconos animate__animated animate__pulse animate__infinite infinite animate__slower	2s'>
                     <Link to='./Proyectos'>
@@ -35,16 +37,18 @@ export const InicioContainer = () => {
                 <div className='contenedor__perfil--iconos animate__animated animate__pulse animate__infinite infinite animate__slower	2s'>
                     <a href={Cv} download='cv'>
                         <img src='https://cdn-icons-png.flaticon.com/512/909/909212.png' alt='cv' className='contenedor__perfil--iconos-E' />
-                        <spam>descargar cv</spam>
+                        <b>descargar cv</b>
                     </a>
                 </div>
             </div>
+            <hr />
             <div className='certificados'>
-                <h2>certificados</h2>
+                <h2>Certificados</h2>
                 <img src={desarrolloweb} className="certificados--img" alt='cert' data-aos="flip-left" data-aos-duration="2000" />
                 <img src={javascript} className="certificados--img" alt='cert' data-aos="flip-right" data-aos-duration="2000" />
                 <img src={Reactjs} className="certificados--img" alt="cert" data-aos="flip-left" data-aos-duration="2000" />
             </div>
+            <hr />
             <div className='skills'>
                 <h2 className='skills__titulo'>Skills</h2>
                 <div className='skills__img'>
@@ -86,6 +90,7 @@ export const InicioContainer = () => {
                     </div>
                 </div>
             </div>
+            <hr />
             
         </div>
     )
