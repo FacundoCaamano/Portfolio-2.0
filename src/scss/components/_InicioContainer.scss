@@ -4,8 +4,13 @@ hr{
 }
 
 .contenedor__inicio--titulo{
-    margin: 150px;
-    color: $base-color;
+    display: flex;
+    justify-content: center;
+    h1{
+        border-left: 5px $base-color solid;
+        color: $base-color;
+        padding-left: 10px; 
+    }
 }
 .contenedor__inicio--sobreMi{
     margin: 150px;
@@ -17,6 +22,10 @@ hr{
     flex-direction: column;
     align-items: center;
     color: $base-color;
+    &--titulo{
+        border-left: 5px $base-color solid;
+        padding: 10px;
+    }
     &--img{
         width: 70%;
         margin: 50px;
@@ -69,8 +78,15 @@ hr{
 .skills{
     margin: 100px;
     &__titulo{
-        color: $base-color;
-        margin: 50px;
+        display: flex;
+        justify-content: center;
+        h2{
+            color: $base-color;
+            margin: 50px;
+            border-left: 5px $base-color solid;
+            padding-left: 10px;
+            
+        }
     }
     &__img{
         display: flex;

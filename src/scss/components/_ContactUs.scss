@@ -1,5 +1,12 @@
 .titulo__contacto{
-    color: $base-color;
+    display: flex;
+    justify-content: center;
+    h1{
+        color: $base-color;
+        border-left: 4px solid $base-color;
+        padding: 10px;
+    }
+    
 }
 
 .contacto{

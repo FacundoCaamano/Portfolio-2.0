@@ -10,7 +10,9 @@ export const InicioContainer = () => {
     return (
         <div className='contenedor__inicio'>
             <hr />
-            <h1 className='contenedor__inicio--titulo animate__animated animate__bounceInDown'>Mi portafolio</h1>
+            <div className='contenedor__inicio--titulo animate__animated animate__bounceInDown'>
+                <h1>Mi portafolio</h1>
+            </div>
             <p className='contenedor__inicio--sobreMi animate__animated animate__bounceInDown'>
                 hola mi nombre es Facundo Caamaño y soy desarrollador Frontend, actualmente estoy estudiando en coder house  cursando la carrera de full stack, me apasiona mucho el mundo de la programacion y la idea de aprender nuevas tecnologias para crear paginas web
             </p>
@@ -37,20 +39,22 @@ export const InicioContainer = () => {
                 <div className='contenedor__perfil--iconos animate__animated animate__pulse animate__infinite infinite animate__slower	2s'>
                     <a href={Cv} download='cv'>
                         <img src='https://cdn-icons-png.flaticon.com/512/909/909212.png' alt='cv' className='contenedor__perfil--iconos-E' />
-                        <b>descargar cv</b>
+                        Descargar cv
                     </a>
                 </div>
             </div>
             <hr />
             <div className='certificados'>
-                <h2>Certificados</h2>
+                <h2 className='certificados--titulo'>Certificados</h2>
                 <img src={desarrolloweb} className="certificados--img" alt='cert' data-aos="flip-left" data-aos-duration="2000" />
                 <img src={javascript} className="certificados--img" alt='cert' data-aos="flip-right" data-aos-duration="2000" />
                 <img src={Reactjs} className="certificados--img" alt="cert" data-aos="flip-left" data-aos-duration="2000" />
             </div>
             <hr />
             <div className='skills'>
-                <h2 className='skills__titulo'>Skills</h2>
+                <div className='skills__titulo'>
+                    <h2 >Skills</h2>
+                </div>
                 <div className='skills__img'>
                     <div className='skills__img--1'>
                         <picture>

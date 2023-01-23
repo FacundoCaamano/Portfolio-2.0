@@ -5,9 +5,9 @@ export const Contacto = () => {
     return (
         <div>
             <section>
-                
-                <h1 className="titulo__contacto">Contactame</h1>
-                
+                <div className="titulo__contacto">
+                    <h1 >Contactame</h1>
+                </div>
                 <ContactUs/>
                 <hr />
                 <p className="contactoParrafo">Puedes completar el formulario y me llegara a mi correo o puedes mandar un correo a mi direccion</p>

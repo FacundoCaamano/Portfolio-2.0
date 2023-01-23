@@ -1,7 +1,13 @@
 .contenedor__proyectosLista{
     &--titulo{
-    color: $base-color;
-    margin: 50px;
+        display: flex;
+        justify-content: center;
+        h1{
+            color: $base-color;
+            margin: 50px;
+            border-left: 4px $base-color solid;
+            padding-left: 10px;
+        }
     }
     &--txt{
         color: $base-color;
